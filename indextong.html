@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu | Codecuahung</title>
+    <link rel="stylesheet" href="styletong.css" />
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <button class="sidebar-toggle">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </nav>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar collapsed">
+        <!-- Sidebar header -->
+        <div class="sidebar-header">
+          <img src="logo.png" alt="CodingNepal" class="header-logo" />
+          <button class="sidebar-toggle">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </button>
+        </div>
+
+        <div class="sidebar-content">
+          <!-- Search Form -->
+          <form action="#" class="search-form">
+            <span class="material-symbols-rounded">Search</span>
+            <input type="search" placeholder="Search..." required />
+          </form>
+
+          <!-- Sidebar Menu -->
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#" class="menu-link active"onclick="loadPage('index.html', this)">
+                <span class="material-symbols-rounded">dashboard</span>
+                <span class="menu-label">Giới thiệu</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" onclick="loadPage('indexgame.html', this)">
+                <span class="material-symbols-rounded">insert_chart</span>
+                <span class="menu-label">Game ghép hình</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" onclick="loadPage('indexve.html', this)">
+                <span class="material-symbols-rounded">notifications</span>
+                <span class="menu-label">Bản vẽ</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" onclick="loadPage('indexpiano.html', this)">
+                <span class="material-symbols-rounded">star</span>
+                <span class="menu-label">PIANO</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" onclick="loadPage('indeximage.html', this)">
+                <span class="material-symbols-rounded">storefront</span>
+                <span class="menu-label">IMAGE</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" onclick="loadPage('indexhangman.html', this)">
+                <span class="material-symbols-rounded">group</span>
+                <span class="menu-label">HANGMAN</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <span class="material-symbols-rounded">settings</span>
+                <span class="menu-label">Cài Đặt</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+          <button class="theme-toggle">
+            <div class="theme-label">
+              <span class="theme-icon material-symbols-rounded">dark_mode</span>
+              <span class="theme-text">Chế Độ Bóng Đêm</span>
+            </div>
+            <div class="theme-toggle-track">
+              <div class="theme-toggle-indicator"></div>
+            </div>
+          </button>
+        </div>
+      </aside>
+       <div class="main-content">
+        <iframe id="content-frame" src="profile.html" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+    <script src="scripttong.js"></script>
+  </body>
+</html>
